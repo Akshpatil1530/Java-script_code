@@ -1,8 +1,7 @@
 <script>
 //1
 //Function 
-function mother()
-{
+function mother() {
 	var emotion = "happiness"
 	var caring = "always she want me to be happy"
 	var money = 5000
@@ -25,7 +24,7 @@ function person_information () {
 	var Skill_and_Relevant_Experience = "C,CPP all Lang & 1 years"
 	var Reporting_Manager = "Venkatesh"
 	var PANCARD_NO = "asu675901f"
-    document.write(Communication_Address, Reporting_Manager)
+    	document.write(Communication_Address, Reporting_Manager)
 }
 person_information()
 
@@ -34,16 +33,16 @@ function net_connection_information () {
 	var Account_No = 1135497
 	var Broadband_User_ID = 11128550
 	var IP_Address = "10.245.97.123"
-    document.write(Broadband_User_ID,IP_Address)
+    	document.write(Broadband_User_ID,IP_Address)
 }
 net_connection_information()
 
 //4
 function net_usage() {
 	var Total_MB_downloaded = "21.26 GB"
-    var Mobile_download_Speed = "30.05 mbps"
-    var Mobile_upload_Speed = "32.06 mbps"
-    document.write(Total_MB_downloaded, Mobile_download_Speed)
+   	 var Mobile_download_Speed = "30.05 mbps"
+   	 var Mobile_upload_Speed = "32.06 mbps"
+   	 document.write(Total_MB_downloaded, Mobile_download_Speed)
 }
 net_usage()
 
@@ -52,23 +51,22 @@ net_usage()
 //If "this" used in function i.e called method
 function vehicle(color, weight) {
 	this.color = "black"
-    this.weight = 300
-    document.write(this.c, this.w)
+   	this.weight = 300
+   	document.write(this.c, this.w)
 }
 vehicle()
 
 //6
 function person_appearance(height , weight, color) {
 	this.height = height
-    this.weight = weight
-    this.color = color
-    document.write(this.emotion,this.weight)
+	this.weight = weight
+    	this.color = color
+    	document.write(this.emotion,this.weight)
 }
 person_appearance( "5.4", 90, "fair")
 
 //7
-function mother()
-{
+function mother() {
 	this.emotion = "happiness"
 	this.caring = "always she want me to be happy"
 	this.money = 5000
@@ -79,13 +77,11 @@ function mother()
 mother()
 
 //8
-function library_book_issue_information(issuedate,duedate,idno)
-{
+function library_book_issue_information(issuedate,duedate,idno) {
 	this.issuedate = issuedate
 	this.duedate = duedate
-    this.idno =idno
+        this.idno =idno
 	document.writeln(this.issuedate,this.duedate,this.idno)
-	return 0
 }
 var library = new library_book_issue_information("14/01/2012","13/02/2012","2008Ec027") 
 
@@ -93,7 +89,7 @@ var library = new library_book_issue_information("14/01/2012","13/02/2012","2008
 class ceo {
  	constructor (name) {
     	this.name = name
-    }
+    	}
 }
 var google_ceo = new ceo("Sundar Pichai")
 var infosys_ceo = new ceo("Salil Parekh")
@@ -103,7 +99,7 @@ document.write(google_ceo.name, infosys_ceo.name)
 //10
 class Motor {
 	constructor () {
-		this.model = "L12Yhy"
+	this.model = "L12Yhy"
     	this.weight = 300
     	this.color = "black"
     	this.cc = 350
@@ -117,13 +113,13 @@ document.write(royal_enfield.color, ktm.cc)
 class person_social_media_information{
 	constructor ( ) {
 		this.name = "akshata"
-    }
-    account( ) {
-    this.fb = "patil_aksh@facebook.com"
-    this.instagram = "aks_12389"
+    	}
+    	account( ) {
+    	this.fb = "patil_aksh@facebook.com"
+    	this.instagram = "aks_12389"
    	this.whatsapp = 9897961234
-    //document.write(fb, instagram ,whatsapp)
-    }
+   	//document.write(fb, instagram ,whatsapp)
+    	}
 }
 var details = new person_social_media_information()
 details.account()
@@ -135,7 +131,7 @@ class inventor {
 	constructor (lang_creator, lang_creator_age) {
     	this.lang_creator = lang_creator
         this.lang_creator_age = lang_creator_age
-       // document.write(this.lang_creator)
+        // document.write(this.lang_creator)
 	}
 }
 var C_inventor = new inventor("Dennis Ritchie",50)
@@ -147,7 +143,7 @@ class homes {
 	constructor (home_name, home_size) {
         this.home_size = home_size
         this.home_name= home_name
-    }
+    	}
 }
 var my_home =new homes("aksh nilaya", 3000)
 var rent_home =new homes("rent nilaya", 5000)
@@ -160,12 +156,10 @@ class IT_company{
         this.designataion =designataion
         this.salary = salary
         this.place = place
-    }
+        }
 }
 var company = new IT_company("intimetec","junior software engg" ,200000 , "Banglore")
 document.writeln(company.name, company.designataion, company.salary, company.place)
-
-
 
 //15
 class corporation_information {
@@ -174,12 +168,11 @@ class corporation_information {
         this.designation = designation
         this.salary= salary
         this.location = location
-    }
+  	}
 }
 var intimetec = new corporation_information ("intimetec", "software engg", 100000, "Silkboard, Banglore" )
 var infosys = new corporation_information ("infosys", "junior software engg", 20000, "Electronics city")
 var wipro = new corporation_information ("wipro", "senior software engg", 30000, "sarjapur banglore")
-
 document.writeln(intimetec.comp_name, infosys.designation, wipro.location)
 
 //16
@@ -188,13 +181,13 @@ class employee_name_age {
 	constructor (name) {
     	this.name = name
         this.static = "static_data" //If you have constant data, here is good to use 
-    }
-    display () {
-    	document.write(this.name, this.age, this.static)
-    }
-    set (age) {
-    	this.age = age
-    }
+   	}
+        display () {
+    		document.write(this.name, this.age, this.static)
+    	}
+    	set (age) {
+    		this.age = age
+    	}
 }
 var employee= new employee_name_age("Aksh")
 //var employee_1 = new employee(50)
