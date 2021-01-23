@@ -12,6 +12,18 @@ var art_flower = new flowers(20, 30)
 document.write(art_flower.rose, art_flower.l)
 
 //2
+class inventor {
+	constructor (lang_creator, lang_creator_age) {
+    	this.lang_creator = lang_creator
+        this.lang_creator_age = lang_creator_age
+       // document.write(this.lang_creator)
+	}
+}
+var C_inventor = new inventor("Dennis Ritchie",50)
+var java_inventor = new inventor("James Gosling", 60)
+document.write( C_inventor.lang_creator, java_inventor.lang_creator_age, java_inventor.lang_creator )
+
+//3
 class net_request_connection {
 	constructor (Broadband_User_ID, IP_Address ) {
     		this.Broadband_User_ID = Broadband_User_ID
@@ -32,7 +44,7 @@ var net_details = new  net_request_connection(11128550, "10.245.97.123")
 net_details.net_usage_data( 80, "30.05 mbps")
 net_details.display()
 
-//3
+//4
 //Validation for data usage
 class net_req_connection_1{
 	onstructor (Broadband_User_ID, IP_Address ) {
@@ -61,7 +73,7 @@ var net_details = new  net_req_connection_1(11128550, "10.245.97.123")
 net_details.net_usage_data( 80, "30.05 mbps")
 net_details.display()
 
-//4
+//5
 class person_appearance_info {
  constructor (weight, hight, Eye_color, gender) {
  	this.weight=  weight
@@ -85,7 +97,7 @@ var personal_appearance=  new person_appearance_info("5.5", "5.8", "brown", "mal
 personal_appearance.contact_details = ("#6/96,rajapet,kadapa", 975545445, 8889994440, "Andrapradesh", "India") 
 personal_appearance.display_1()
 
-//5
+//6
 function usage_net(TotalMBdownloaded,MobiledownloadSpeed)
 {
 	MobileuploadSpeed = "32.06 mbps"
@@ -101,7 +113,7 @@ function usage_net(TotalMBdownloaded,MobiledownloadSpeed)
 var result = usage_net(111,"34.06mbps")
 document.write(result)
 
-//6
+//7
 class license {
 	constructor (first_name, middle_name, last_name) {
          this.first_name = first_name
@@ -128,7 +140,7 @@ var person_name = new license("pavan", "kumar", "bujjivan")
 person_name.drivers_details ("ka50201500006939", "karnataka", "india", "around india", "software engineer", "12-07-1992","rajampet" )
 person_name.display()
 
-//7
+//8
 class person_appearance{
  constructor (weight, hight, Eye_color, gender) {
  		this.weight =  weight
@@ -163,7 +175,7 @@ var person_information =  new person_appearance("5.5", "5.8", "brown", "male")
 person_information.contact_details = ("#6/96,rajapet,kadapa", 975545445, 8889994440, "Andrapradesh", "India") 
 person_information.display_1()
 
-//8
+//9
 class Online_shopping {
 	constructor (Brand, Product_Code, Color, Size, Material,Occasion, Pattern, Sleeve, Neck_Type, fit,Gender ) {
     	this.Brand = Brand
@@ -191,7 +203,7 @@ var shirt_online_shop  = new Online_shopping("Scott International", "APPSCOTT-IN
 shirt_online_shop.shipping_details("9 days", "Seller will accept returns within a 15 days from date of delivery of the item")
 shirt_online_shop.display()
 
-//9
+//10
 class vehicle_information {
 	constructor (Vehicle_type, Colour, Company) {
     this.Vehicle_type = Vehicle_type
@@ -211,7 +223,7 @@ var vehicle= new vehicle_information( "light motor vehicle- car", "red", "BMW" )
 vehicle.engine("kp98gtyihh457797", "tc5678898335r45")
 vehicle.display()
 
-//10
+//11
 class visiting_card_details{
 	constructor (name,mail_id,contact_no,company_name  ) {
     	this.name = name
@@ -230,7 +242,7 @@ var visiting = new visiting_card_details("naresh", "naresh.jvt@gmail.com", "+91 
 visiting.contact("230/3 2nd floor hal3rd stage new thippasandra bangalore-560075.230/3 2nd floor hal3rd stage new thippasandra bangalore-560075.")
 visiting.display()
 
-//11
+//12
 class Electric_bill_paid_via_netbanking_1 {
 	constructor (website,password,consumer_number, Billing_status, mode_of_payment) {
     	this.website = website
@@ -254,7 +266,7 @@ var Electrical_bill  = new Electric_bill_paid_via_netbanking_1 ("www.tnebnet.org
 Electrical_bill.person_billing_statement("sbi", "kumar00", 123456, "18cv21828578437", "successful")
 Electrical_bill.display()
 
-//12
+//13
 class Vehicle_Registration_Certificate_Book {
 	constructor (Registration_Number, Owner_Name,S_W_D, Permanent_Addres, Temporary_Address, Dealer,Classis_No) {
 		this.Registration_Number = Registration_Number
@@ -291,7 +303,7 @@ var vehicle_regiatration = new Vehicle_Registration_Certificate_Book("TN 22 CY 2
 vehicle_regiatration.licence("karnatak","TN-41230120012921", "xxxxx", "yyyyyy", "#4/79, silk board, banglore", "15-10-2000"  )
 vehicle_regiatration.display()
 
-//13
+//14
 class person_bio{
 	static place = "rajimpet"
 	constructor(){
@@ -311,7 +323,7 @@ let developer = new person_bio()
 developer.get()
 person_bio.software()
 
-//14
+//15
 //clss using static data
 class Laptop_Specification {
 	static model = "LGp430"
@@ -338,7 +350,7 @@ let Laptop = new Laptop_Specification()
 Laptop.Laptop_details()
 Laptop_Specification.get()
 
-//15
+//16
 class Electricity_Bill {
 	static select_Account = "1-121-008-54"
     constructor () {
@@ -365,7 +377,7 @@ var billing = new Electricity_Bill
 billing.cadidate()
 Electricity_Bill.bill()
 
-//16
+//17
 class person_data {
 	static place = "rajimpet"
 	constructor(){
@@ -385,7 +397,7 @@ let developers = new person_data()
 developers.get()
 person_data.software()
 
-//17
+//18
 class tv_details_specification {
 	constructor (name) {
     	this.name = name   
@@ -408,7 +420,7 @@ var tv = new tv_details_specification("samsung")
 tv.tv_model_specification("LG55LHX",  "acklight w/Local Dimming","55 inches" ,  "scanning Backlight (240 HZ “effect”)",  "yes" , "USB 2.0 (pictures, music,videos)", "youtube" , "55000" )
 tv. display ()
 
-//18
+//19
 class Vehicle_Registration_Certificate {
  	constructor ( Owner_Name,S_W_Do  ,Permanent_Address ,Temporary_Address) {
     	this.Owner_Name = Owner_Name
@@ -445,7 +457,7 @@ var vehicle_registation = new Vehicle_Registration_Certificate("Sachin", "Sirini
 vehicle_registation.Vehicle_details( "TN 22 CY 2917",  5793603 , "0G3N72505757", " LMV (CAR)"  , " Maruthi SuzUKI India LTD" , 3,  740, 2360, 5, "Petrol", 796)
 vehicle_registation.display()
 
-//19 
+//20 
 class lic_policy {
  	constructor ( Branch_Code) {
 			this.Branch_Code = Branch_Code	
@@ -474,7 +486,7 @@ var policy = new lic_policy(309)
 policy.lic_policy_details("07/11/2013-12:51", "BTM layout", "6713.00","6713.00" ,364164915 ,"02/04/2009" , "04/13","6426.00" , "287.20",  "Due 01/2019 to 02/2021", "6713.20" , "04/2014")
 policy. display ()
 
-//20
+//21
 //Data structure
 let bio_of_person = {
 	from : "Siva Prasad <kasi.sivap@gmail.com>",
@@ -486,7 +498,7 @@ bio_of_person.method = function () {
 }
 bio_of_person.method()
 
-//21
+//22
 let corporate_Information = {
 		Company_name : "JVT",
 		Designation: "Programmer",
