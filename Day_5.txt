@@ -21,7 +21,7 @@ company(corporate_information)
 
 //3
 function Library_1 (Book_ID,Book_name, Book_Author, Issue_Date, Due_Date, ID_No, Name, Return_on, Fine) {
-	 document.write(Book_ID,Book_name, Book_Author, Issue_Date, Due_Date, ID_No, Name, Return_on, Fine)
+	document.write(Book_ID,Book_name, Book_Author, Issue_Date, Due_Date, ID_No, Name, Return_on, Fine)
 }
 function BOOK(callback) {
 	callback (12345634, "C Programming","Dennis Ritche", "14/01/2012", "13/02/2012", "2008Ec027", "Saravanan", "25/02/2012", 12
@@ -60,7 +60,7 @@ internet_connection(broadband_connection_details)
 //5
 let Health_care = [
 	{test : "WBc", result: "4.4" , flag:"low", units:"X10E3/U", Refernce_Interval: "4.0-10.5" , LAB : "01"},
-    {test : "RBC", result: "4.05" , flag:"low", units:"X10E6/UL" , Refernce_Interval: "4.10 -5.60", LAB :"01"},
+    	{test : "RBC", result: "4.05" , flag:"low", units:"X10E6/UL" , Refernce_Interval: "4.10 -5.60", LAB :"01"},
 	{test : "Hemoglobin", result: "14.83", flag:"low" , units:"g/dl" , Refernce_Interval:"12.5 -17.0", LAB :"01"},
 	{test :"Hematocrit", result: "41.8" , flag: "low", units:"%", Refernce_Interval:"36.0-50.0" , LAB :"01"},
 	{test : "MCV", result: 86 , flag: "low", units: "Fl", Refernce_Interval:"80-98" , LAB :"01"},
@@ -76,30 +76,30 @@ function get_blood_details(item) {
 let College_Lab_components_duing_the_Lab_exercise = [
 	{S_No : 1 , Components : "UJT", Specifications : "2N 2646", Quantity : 2},
 	{S_No : 2, Components : "Resistor", Specifications : "220ohms" , Quantity : 1},
-    {S_No : 3, Components : "Capacitor", Specifications : "0.01uf" , Quantity : 4},
-    {S_No : 4, Components : "CRO", Specifications : "20MHZ" , item : 1},
-    {S_No : 5, Components : "Function Generator", Specifications : "1MHZ" , Quantity : 1},
-    {S_No : 6, Components : "Regulated power supply", Specifications : "(0-30V),1A", Quantity : 1},
+    	{S_No : 3, Components : "Capacitor", Specifications : "0.01uf" , Quantity : 4},
+    	{S_No : 4, Components : "CRO", Specifications : "20MHZ" , item : 1},
+    	{S_No : 5, Components : "Function Generator", Specifications : "1MHZ" , Quantity : 1},
+    	{S_No : 6, Components : "Regulated power supply", Specifications : "(0-30V),1A", Quantity : 1},
 ]
 College_Lab_components_duing_the_Lab_exercise.map(get_lab_exercise_details) 
 function get_lab_exercise_details(item) {
 	document.write(item.S_No, item.Components,item.Specifications)
-    if (item.S_No == 4)
-    {
-    	document.write(item.Specifications)
-    }
-    if (item.S_No == 2)
-    {
-    	document.write(item.Components)
-    }
-    if (item.S_No == 3)
-    {
-    	document.write(item.Quantity)
-    }
-    if (item.S_No == 1)
-    {
-    	document.write(item.Components)
-    }
+    	if (item.S_No == 4)
+    	{
+    		document.write(item.Specifications)
+    	}
+   	 	if (item.S_No == 2)
+    	{
+    		document.write(item.Components)
+    	}
+    		if (item.S_No == 3)
+    	{
+    		document.write(item.Quantity)
+   	 }
+    		if (item.S_No == 1)
+   	 {
+    		document.write(item.Components)
+   	 }
 }
 
 //7
@@ -107,30 +107,30 @@ let demat_Ledger_balance_details = [
 	{Date : "10/01/2021", Particular : "Nsdl Dp Bill-Dec-14", voucher : "K04424462", debit : "45.0" , credit : "0.00" , balance : "584.29 Cr" },
 	{Date : "17/01/2021" ,  Particular :  "BILL FOR BC1415199", voucher : "B00000695", debit : "280.84", credit : "0.00", balance : "865.13 Cr" },
 	{Date : "18/01/2021" ,  Particular : "Nsdl Dp Bill-Jan-15", voucher : "K04573521" , debit : "73.00" , credit : "0.00", balance : "792.13 Cr" },
-    {Date : "20/01/2021",  Particular : "BILL FOR NN2015033", voucher : "B00012559", debit : "0.00" , credit : "0.00", balance : "4,319.55 Cr" },
+    	{Date : "20/01/2021",  Particular : "BILL FOR NN2015033", voucher : "B00012559", debit : "0.00" , credit : "0.00", balance : "4,319.55 Cr" },
 ]
 demat_Ledger_balance_details.map (Demat_transaction)
 function Demat_transaction(transaction) {
 	document.write(transaction.Date, transaction.Particular)
-    if (transaction.Date == "10/01/2021" )
-    {
-    	document.write(transaction.debit)
-    }
+    	if (transaction.Date == "10/01/2021" )
+    	{
+    		document.write(transaction.debit)
+   	 }
+   	 
+	 if (transaction.Date ==  "17/01/2021" )
+    	{
+    		document.write(transaction. Particular)
+   	 }
     
-    if (transaction.Date ==  "17/01/2021" )
-    {
-    	document.write(transaction. Particular)
-    }
-    
-    if (transaction.Date == "18/01/2021" ) 
-    {
+   	 if (transaction.Date == "18/01/2021" ) 
+   	 {
     	document.write(transaction.credit)
-    }
+    	}
     
-    if (transaction.Date ==  "20/01/2021" ) 
-    {
-    	document.write(transaction.balance)
-    }
+    	if (transaction.Date ==  "20/01/2021" ) 
+   	 {
+    		document.write(transaction.balance)
+    	}
 }
 
 //8
