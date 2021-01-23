@@ -3,10 +3,22 @@
 //Data initialization
 //Global variables
 
-var Company_name = "JVT"
-var Designation = "Programmer"
-var Salary = "2.3 or 230000"
-var Location = "Bangalore"
+var company_name = "JVT"
+var designation = "Programmer"
+var salary = "2.3 or 230000"
+var location = "Bangalore"
+var name = "Jai Venkateswara Technologies"
+var educational_Qualification = "B TECH MCA MBA BSC MSC"
+var date_Of_Birth = "2/6/1988"
+var communication_Address = "233/3 Ground floor new thippasandra"
+var residence_Number = 08025216666
+var mobile = 9900367097
+var email = "venkatesh.db@gmail.com"
+var total_IT_Exp = "1 years"
+var skill_Relevant_Experience = "C,CPP all Lang & 1 years"
+var reporting_Manager = "Venkatesh"
+var pancard_no = "asu675901f"
+
 document.write(Company_name, Designation, Salary, Location)
 
 //1
