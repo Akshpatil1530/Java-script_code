@@ -13,19 +13,19 @@ document.write(art_flower.rose, art_flower.l)
 
 //2
 class net_request_connection {
-		constructor (Broadband_User_ID, IP_Address ) {
-    	this.Broadband_User_ID = Broadband_User_ID
-        this.IP_Address = IP_Address
+	constructor (Broadband_User_ID, IP_Address ) {
+    		this.Broadband_User_ID = Broadband_User_ID
+        	this.IP_Address = IP_Address
    	}
-    net_usage_data (Total_MB_downloaded, Mobile_downloaded_speed) {
+    	net_usage_data (Total_MB_downloaded, Mobile_downloaded_speed) {
     	var Mobile_upload_Speed = "32.06 mbps"
         this.Total_MB_downloaded = Total_MB_downloaded
         this.Mobile_downloaded_speed = Mobile_downloaded_speed
-    }
-    display ( )
-    {
-    	document.writeln(this.Broadband_User_ID, this.IP_Address)
-        document.writeln(this.Total_MB_downloaded, this.Mobile_downloaded_speed)
+    	}
+    	display ( )
+    	{
+    		document.writeln(this.Broadband_User_ID, this.IP_Address)
+       		document.writeln(this.Total_MB_downloaded, this.Mobile_downloaded_speed)
     }
 }
 var net_details = new  net_request_connection(11128550, "10.245.97.123")
@@ -35,27 +35,26 @@ net_details.display()
 //3
 //Validation for data usage
 class net_req_connection_1{
-		constructor (Broadband_User_ID, IP_Address ) {
-    	this.Broadband_User_ID = Broadband_User_ID
-        this.IP_Address = IP_Address
+	onstructor (Broadband_User_ID, IP_Address ) {
+    		this.Broadband_User_ID = Broadband_User_ID
+        	this.IP_Address = IP_Address
    	}
-    net_usage_data (Total_MB_downloaded, Mobile_downloaded_speed) {
-    	var Mobile_upload_Speed = "32.06 mbps"
-        this.Total_MB_downloaded = Total_MB_downloaded
-        this.Mobile_downloaded_speed = Mobile_downloaded_speed
-        if (Total_MB_downloaded >= 80 )
-        {
-        	document.write("You have exhausted your daily data")
-        }
-        else
-        {
-        	document.write("Invalid")	
-        }
-    }
-    display ( )
-    {
-    	document.writeln(this.Broadband_User_ID, this.IP_Address)
-        document.writeln(this.Total_MB_downloaded, this.Mobile_downloaded_speed)
+    	net_usage_data (Total_MB_downloaded, Mobile_downloaded_speed) {
+    		var Mobile_upload_Speed = "32.06 mbps"
+        	this.Total_MB_downloaded = Total_MB_downloaded
+       	 	this.Mobile_downloaded_speed = Mobile_downloaded_speed
+        	if (Total_MB_downloaded >= 80 )
+        	{
+        		document.write("You have exhausted your daily data")
+        	}
+        	else
+        	{
+        		document.write("Invalid")	
+        	}
+    	}
+    	display ( ) {
+    		document.writeln(this.Broadband_User_ID, this.IP_Address)
+	        document.writeln(this.Total_MB_downloaded, this.Mobile_downloaded_speed)
     }
 }
 var net_details = new  net_req_connection_1(11128550, "10.245.97.123")
@@ -65,12 +64,12 @@ net_details.display()
 //4
 class person_appearance_info {
  constructor (weight, hight, Eye_color, gender) {
- 		this.weight=  weight
+ 	this.weight=  weight
         this.hight = hight
         this.Eye_color= Eye_color
         this.gender =  gender       
  	}
-    contact_details (home_address, home_phone, mobile, state, country) {
+	contact_details (home_address, home_phone, mobile, state, country) {
     	this.home_address = home_address 
         this.home_phone = home_phone
         this.mobile =  mobile
@@ -110,18 +109,19 @@ class license {
          this.last_name = last_name
         }
         drivers_details (driver_license_no, Driver_license_state, Driver_license_contry,Civilian_type, Employee_type,Date_of_birth, City_of_birth   ) {
-        	this.driver_license_no = driver_license_no
-         	this.Driver_license_state = Driver_license_state
-            this.Driver_license_contry =Driver_license_state
-            this.Civilian_type = Driver_license_state
-            this.Employee_type = Employee_type
-            this.Date_of_birth = Date_of_birth
-            this.City_of_birth = City_of_birth
+        	
+		this.driver_license_no = driver_license_no
+        	this.Driver_license_state = Driver_license_state
+        	this.Driver_license_contry =Driver_license_state
+        	this.Civilian_type = Driver_license_state
+       	 	this.Employee_type = Employee_type
+        	this.Date_of_birth = Date_of_birth
+        	this.City_of_birth = City_of_birth
         }
-        display()
+       	display()
         {
-         document.writeln(this.first_name, this.last_name, this.middle_name)
-         document.writeln(this.Date_of_birth, this.Civilian_type, this.last_name, this.driver_license_no,  this.City_of_birth, this.Driver_license_contry, this.Driver_license_contry)
+         	document.writeln(this.first_name, this.last_name, this.middle_name)
+        	document.writeln(this.Date_of_birth, this.Civilian_type, this.last_name, this.driver_license_no,  this.City_of_birth, this.Driver_license_contry, this.Driver_license_contry)
         }
 }
 var person_name = new license("pavan", "kumar", "bujjivan")
@@ -258,13 +258,13 @@ Electrical_bill.display()
 class Vehicle_Registration_Certificate_Book {
 	constructor (Registration_Number, Owner_Name,S_W_D, Permanent_Addres, Temporary_Address, Dealer,Classis_No) {
 		this.Registration_Number = Registration_Number
-        this.Owner_Name = Owner_Name
-        this.S_W_D = S_W_D
-        this.Permanent_Addres = Permanent_Addres
-        this.Temporary_Address = Temporary_Address
-        this.Dealer = Dealer
-        this.Classis_No = Classis_No
-        this.Engine_No = "0G3N72505757"
+      		this.Owner_Name = Owner_Name
+        	this.S_W_D = S_W_D
+       	 	this.Permanent_Addres = Permanent_Addres
+        	this.Temporary_Address = Temporary_Address
+        	this.Dealer = Dealer
+        	this.Classis_No = Classis_No
+        	this.Engine_No = "0G3N72505757"
 		this.Class_of_Vehicle = "LMV (CAR)"
 		this.maker_Name = "Maruthi SuzUKI India LTD"
 		this.No_of_Cylinder = 3
@@ -457,7 +457,7 @@ class lic_policy {
 	 	this.mr_Mrs = mr_Mrs
 		this.Policy_No = Policy_No
 		this.Doc  = Doc
-        this.Due_Date = Due_Date
+       		this.Due_Date = Due_Date
 		this.Premium_amount = Premium_amount
 		this.Late_Fee = Late_Fee
 		this.Loan_interest =Loan_interest
