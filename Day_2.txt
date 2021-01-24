@@ -1,7 +1,8 @@
 <script>
 //1
 //Function 
-function mother() {
+function mother() 
+{
 	var emotion = "happiness"
 	var caring = "always she want me to be happy"
 	var money = 5000
@@ -12,7 +13,8 @@ function mother() {
 mother()
 
 //2
-function person_information () {
+function person_information () 
+{
 	var Name = "Jai Venkateswara Technologies"
 	var Educational = "Qualification : B TECH MCA MBA BSC MSC"
 	var Date_Of_Birth = "2/6/1988"
@@ -29,7 +31,8 @@ function person_information () {
 person_information()
 
 //3
-function net_connection_information () {
+function net_connection_information () 
+{
 	var Account_No = 1135497
 	var Broadband_User_ID = 11128550
 	var IP_Address = "10.245.97.123"
@@ -38,7 +41,8 @@ function net_connection_information () {
 net_connection_information()
 
 //4
-function net_usage() {
+function net_usage() 
+{
 	var Total_MB_downloaded = "21.26 GB"
    	 var Mobile_download_Speed = "30.05 mbps"
    	 var Mobile_upload_Speed = "32.06 mbps"
@@ -49,7 +53,8 @@ net_usage()
 //5
 //Function using this
 //If "this" used in function i.e called method
-function vehicle(color, weight) {
+function vehicle(color, weight) 
+{
 	this.color = "black"
    	this.weight = 300
    	document.write(this.c, this.w)
@@ -57,7 +62,8 @@ function vehicle(color, weight) {
 vehicle()
 
 //6
-function person_appearance(height , weight, color) {
+function person_appearance(height , weight, color) 
+{
 	this.height = height
 	this.weight = weight
     	this.color = color
@@ -66,7 +72,8 @@ function person_appearance(height , weight, color) {
 person_appearance( "5.4", 90, "fair")
 
 //7
-function mother() {
+function mother() 
+{
 	this.emotion = "happiness"
 	this.caring = "always she want me to be happy"
 	this.money = 5000
@@ -77,7 +84,8 @@ function mother() {
 mother()
 
 //8
-function library_book_issue_information(issuedate,duedate,idno) {
+function library_book_issue_information(issuedate,duedate,idno) 
+{
 	this.issuedate = issuedate
 	this.duedate = duedate
         this.idno =idno
@@ -86,8 +94,10 @@ function library_book_issue_information(issuedate,duedate,idno) {
 var library = new library_book_issue_information("14/01/2012","13/02/2012","2008Ec027") 
 
 //9
-class ceo {
- 	constructor (name) {
+class ceo 
+{
+ 	constructor (name) 
+	{
     	this.name = name
     	}
 }
@@ -97,8 +107,10 @@ document.write(google_ceo.name, infosys_ceo.name)
 
 
 //10
-class Motor {
-	constructor () {
+class Motor 
+{
+	constructor () 
+	{
 	this.model = "L12Yhy"
     	this.weight = 300
     	this.color = "black"
@@ -110,15 +122,18 @@ var ktm = new Motor ()
 document.write(royal_enfield.color, ktm.cc)
 
 //11
-class person_social_media_information{
-	constructor ( ) {
+class person_social_media_information
+{
+	constructor ( ) 
+	{
 		this.name = "akshata"
     	}
-    	account( ) {
-    	this.fb = "patil_aksh@facebook.com"
-    	this.instagram = "aks_12389"
-   	this.whatsapp = 9897961234
-   	//document.write(fb, instagram ,whatsapp)
+    	account( ) 
+	{
+    		this.fb = "patil_aksh@facebook.com"
+    		this.instagram = "aks_12389"
+   		this.whatsapp = 9897961234
+   		//document.write(fb, instagram ,whatsapp)
     	}
 }
 var details = new person_social_media_information()
@@ -127,11 +142,13 @@ document.write(details.fb, details.whatsapp)
 
 
 //12
-class inventor {
-	constructor (lang_creator, lang_creator_age) {
-    	this.lang_creator = lang_creator
-        this.lang_creator_age = lang_creator_age
-        // document.write(this.lang_creator)
+class inventor 
+{
+	constructor (lang_creator, lang_creator_age) 
+	{
+    		this.lang_creator = lang_creator
+        	this.lang_creator_age = lang_creator_age
+        	// document.write(this.lang_creator)
 	}
 }
 var C_inventor = new inventor("Dennis Ritchie",50)
@@ -139,10 +156,12 @@ var java_inventor = new inventor("James Gosling", 60)
 document.write( C_inventor.lang_creator, java_inventor.lang_creator_age, java_inventor.lang_creator )
 
 //13
-class homes {
-	constructor (home_name, home_size) {
-        this.home_size = home_size
-        this.home_name= home_name
+class homes 
+{
+	constructor (home_name, home_size) 
+	{
+        	this.home_size = home_size
+        	this.home_name= home_name
     	}
 }
 var my_home =new homes("aksh nilaya", 3000)
@@ -150,24 +169,28 @@ var rent_home =new homes("rent nilaya", 5000)
 document.writeln(rent_home.home_name)
 
 //14
-class IT_company{
-	constructor (name, designataion, salary, place) {
-    	this.name =  name
-        this.designataion =designataion
-        this.salary = salary
-        this.place = place
+class IT_company
+{
+	constructor (name, designataion, salary, place) 
+	{
+    		this.name =  name
+        	this.designataion =designataion
+       	 	this.salary = salary
+        	this.place = place
         }
 }
 var company = new IT_company("intimetec","junior software engg" ,200000 , "Banglore")
 document.writeln(company.name, company.designataion, company.salary, company.place)
 
 //15
-class corporation_information {
-	constructor (comp_name, designation, salary, location) {
-    	this.comp_name = comp_name
-        this.designation = designation
-        this.salary= salary
-        this.location = location
+class corporation_information 	
+{
+	constructor (comp_name, designation, salary, location) 
+	{
+    		this.comp_name = comp_name
+        	this.designation = designation
+        	this.salary= salary
+        	this.location = location
   	}
 }
 var intimetec = new corporation_information ("intimetec", "software engg", 100000, "Silkboard, Banglore" )
@@ -177,15 +200,19 @@ document.writeln(intimetec.comp_name, infosys.designation, wipro.location)
 
 //16
 //Single responisbility principle (srp)
-class employee_name_age {
-	constructor (name) {
-    	this.name = name
-        this.static = "static_data" //If you have constant data, here is good to use 
+class employee_name_age
+{
+	constructor (name) 
+	{
+    		this.name = name
+        	this.static = "static_data" //If you have constant data, here is good to use 
    	}
-        display () {
+        display () 
+	{
     		document.write(this.name, this.age, this.static)
     	}
-    	set (age) {
+    	set (age) 
+	{
     		this.age = age
     	}
 }
@@ -205,6 +232,3 @@ Corporate_Information = ["JVT", "Programmer",  "2.3 or 230000", "Bangalore"]
 document.write(Corporate_Information[2])
 
 </script>
-
-
-
