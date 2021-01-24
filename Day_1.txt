@@ -22,7 +22,8 @@ var pancard_no = "asu675901f"
 document.write(Company_name, Designation, Salary, Location)
 
 //1
-function akshata () {
+function akshata () 
+{
 	var emotions = "happy"
     	//Variable(emotions) stores in stack, data("happy") stores in heap.
 	var color = "fair"
@@ -33,7 +34,8 @@ function akshata () {
 akshata ()
 
 //2
-function vehicle () {
+function vehicle () 
+{
 	var name = "enfield"
 	var color = "black"
 	var weight = 350
@@ -43,7 +45,8 @@ function vehicle () {
 vehicle()
 
 //3
-function home () {
+function home () 
+{
 	//variable stores in stack, data stores in heap
 	var name = "akshata nilay"
     	var size = 30*40//it will gives multiplication 
@@ -52,7 +55,8 @@ function home () {
 }
  home ()
 //4
-function Appearance_information ( ) {
+function Appearance_information ( ) 
+{
 	var Weight = 55 
     	var Hight = "5.8" 
     	var Eye_colour = "brown"
@@ -67,7 +71,8 @@ function Appearance_information ( ) {
 Appearance_information()
 
 //5
-function Vehicle_information () {
+function Vehicle_information () 
+{
 	var Vehicle_type = "light motor vehicle- car" 
     	var Colour = "red" 
     	var Engine_number = "kp98gtyihh457797" 
@@ -78,7 +83,8 @@ function Vehicle_information () {
 Vehicle_information()
 
 //6
-function System_Propertie () {
+function System_Propertie () 
+{
 	var Rating = "4.5"
 	var Processor = "Intel® Core™ i5-2450 CPU"
 	var Installed_Memory_RAM= "4.00GB"
@@ -93,14 +99,15 @@ function System_Propertie () {
 System_Propertie()
 
 //7
-function home (name,size,rooms) {
+function home (name,size,rooms) 
+{
 	document.write(name, size, rooms)
-	}
+}
 home("aksh", 30*50, 6)
 
 //8
-home_1 ("akshata_nilay", 50*50, 6)
-	function home_1 (name,size) {
+function home_1 (name,size) 
+{
 	var rooms = 7
 	document.write(name, size, rooms)
 }
@@ -109,20 +116,21 @@ home_1 ("akshata_home", 60*60)
 home_1 ("sudha_nilaya", 80*100)
 
 //9
-function System_Propertie ( Rating, Processor, Installed_Memory_RAM,Installed_Memory_RAM ,System_Type ,Pen_and_Touch ,Computer_Name ,Windows_Edition,Windows_Product_ID) {
+function System_Propertie ( Rating, Processor, Installed_Memory_RAM,Installed_Memory_RAM ,System_Type ,Pen_and_Touch ,Computer_Name ,Windows_Edition,Windows_Product_ID)
+{
 	document.write(Rating, Processor, Installed_Memory_RAM,Processor,Installed_Memory_RAM ,System_Type ,Pen_and_Touch ,Computer_Name ,Windows_Edition, Windows_Product_ID)    
 }
 System_Propertie("4.5", "Intel® Core™ i5-2450 CPU", "4.00GB", "64-bit Operating System", "No Pen or Touch Input is available for this Display", "BALU-PC", "WORKGROUP", "Windows 7 Ultimate", "00426-OEM-8992662-00")
 
 
 //10
-function Corporate_Information (	) {
+function Corporate_Information () 
+{
 	var Company_name = "JVT"
 	var Designation = "Programmer"
 	var Salary = "2.3 or 230000"
-    var Location = "Bangalore"
-    document.write(Company_name, Designation, Salary, Location)
+    	var Location = "Bangalore"
+    	document.write(Company_name, Designation, Salary, Location)
 }
 Corporate_Information ()
-
 </script>
