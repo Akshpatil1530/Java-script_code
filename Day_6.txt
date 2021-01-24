@@ -5,17 +5,17 @@
 class corporate_information 
 {
 	constructor (name) 
-    {
-    	this.name =name
-    }
-    set company_name(name)
-    {
-    	this.name =name
-    }
-    get company_name()
-    {
-    	document.write(this.name)
-    }
+    	{
+    		this.name =name
+    	}
+    	set company_name(name)
+    	{
+    		this.name =name
+    	}
+    	get company_name()
+    	{
+    		document.write(this.name)
+    	}
 }
 let company = new corporate_information("JVT")
 company.company_name
@@ -24,26 +24,26 @@ company.company_name
 class employee 
 {
 	constructor (name,company ) 
-    {
-    	this.name = name
-        this.company = company
-    }
-    getname() 
-    {
-    	return this.name
-    }
-    setname(name) 
-    {
-    	this.name = name
-    }
-    getcompany() 
-    {
-    	return this.company
-    }
-    setcompany(company) 
-    {
-    	this.company = company
-    }
+    	{
+    		this.name = name
+        	this.company = company
+    	}
+    	getname() 
+    	{
+    		return this.name
+   	 }
+    	setname(name) 
+    	{
+    		this.name = name
+   	 }
+    	getcompany() 
+   	 {
+    		return this.company
+   	 }
+    	setcompany(company) 
+    	{
+    		this.company = company
+    	}
 }
 let employees = new employee
 employees.setname("Akshata")
@@ -52,28 +52,29 @@ document.write(employees.getname(), employees.getcompany())
 
 
 //3
-class vehicle_informatio{
+class vehicle_informatio
+{
 	constructor (vehicle_type, engine_number ) 
-    {
-    	this.vehicle_type = vehicle_type
-        this.engine_number = engine_number
-    }
-    getvehicle_type() 
-    {
-    	return this.vehicle_type
-    }
-    setvehicle_type(vehicle_type) 
-    {
-    	 this.vehicle_type = vehicle_type
-    }
-    getengine_number()
-    {
-    	return this.engine_number
-    }
-    setengine_number(engine_number) 
-    {
-    	this.engine_number = engine_number
-    }
+    	{
+    		this.vehicle_type = vehicle_type
+        	this.engine_number = engine_number
+    	}
+    	getvehicle_type() 
+    	{
+    		return this.vehicle_type
+    	}
+    	setvehicle_type(vehicle_type) 
+    	{
+    		this.vehicle_type = vehicle_type
+    	}
+    		getengine_number()
+   	{
+    		return this.engine_number
+    	}
+    	setengine_number(engine_number) 
+    	{
+    		this.engine_number = engine_number
+    	}
 }
 var vehicle = new vehicle_informatio
 vehicle.setvehicle_type("light motor vehicle- car")
@@ -84,26 +85,26 @@ document.write(vehicle.getengine_number() , vehicle.getvehicle_type())
 class creating_google_account 
 {
 	constructor (first_name, last_name) 
-    {
-    	this.first_name = first_name
-        this.last_name =  last_name
-    }
-    getfirst_name()
-    {
-    	return this.first_name
-    }
-    setfirst_name(first_name) 
-    {
-    	this.first_name= first_name
-    }
-    getlast_name() 
-    {
-    	return this. last_name
-    }
-    setlast_name( last_name) 
-    {
-    	this.last_name = last_name
-    }
+    	{
+    		this.first_name = first_name
+        	this.last_name =  last_name
+    	}
+    	getfirst_name()
+    	{
+    		return this.first_name
+   	 }
+    	setfirst_name(first_name) 
+    	{
+    		this.first_name= first_name
+    	}
+    	getlast_name() 
+    	{
+    		return this. last_name
+    	}
+    	setlast_name( last_name) 
+    	{
+    		this.last_name = last_name
+    	}
 }
 let google_account = new creating_google_account
 google_account.setfirst_name("venkatesh")
@@ -145,5 +146,3 @@ compnay_access.display()
 document.write(compnay_access.getter)
 
 </script>
-
-
