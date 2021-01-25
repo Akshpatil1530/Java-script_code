@@ -239,4 +239,12 @@ else
 {
 	document.write("No medical found in this name")
 }
+
+//validation
+//13
+var visiting_card_detail = ["naresh", "naresh.jvt@gmail.com", 9944860792, "jvt",  "programmer", "230/3 2nd floor hal3rd stage new thippasandra bangalore-560075"]
+for(i = 0; i < visiting_card_detail.length; i++)
+{
+	document.write(visiting_card_detail[i])
+}
 </script>
