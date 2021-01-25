@@ -24,7 +24,7 @@ function company (callback)
 company(corporate_information)
 
 //3
-function Library_1 (Book_ID,Book_name, Book_Author, Issue_Date, Due_Date, ID_No, Name, Return_on, Fine) 
+function Library (Book_ID,Book_name, Book_Author, Issue_Date, Due_Date, ID_No, Name, Return_on, Fine) 
 {
 	document.write(Book_ID,Book_name, Book_Author, Issue_Date, Due_Date, ID_No, Name, Return_on, Fine)
 }
@@ -33,7 +33,7 @@ function BOOK(callback)
 	callback (12345634, "C Programming","Dennis Ritche", "14/01/2012", "13/02/2012", "2008Ec027", "Saravanan", "25/02/2012", 12
 )
 }
-BOOK(Library_1)
+BOOK(Library)
 
 //4
 function speed_Post_1(Post_office_Details,tracking_Number, Counter_No, op_code, From_addres, To_Address, weight, amount, date_time, taxes) 
@@ -67,6 +67,17 @@ function internet_connection (callback)
 	callback(1135497, 11128550, "10.245.97.123")
 }
 internet_connection(broadband_connection_details)
+
+//7
+function vehicle_information (Vehicle_type, Colour, Engine_number, Chassis_number, Compan) 
+{
+ document.write(Vehicle_type, Colour, Engine_number, Chassis_number)
+}
+function vehicle (callback)
+{
+	callback("light motor vehicle- car", "red", "kp98gtyihh457797", "tc5678898335r45" , "BMW" )
+}
+vehicle(vehicle_information)
 
 //Object array()
 //5
