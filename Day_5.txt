@@ -1,7 +1,42 @@
 <script>
 
-//Call back function
+//Validation
 //1
+class online_spping_address 
+{
+	constructor (name, phone) 
+    {
+    	this.name = name
+        this.phone = phone
+    }
+    address_details(Address, Landmark, City, Pincode, State, Country, Phone)
+    {
+		this.Address = Address
+		this.Landmark = Landmark
+		this.City = City
+		this.Pincode = Pincode
+		this.State = State
+		this.Country = Country
+        if (this.Address == "#53, btm 2nd stage banglore" && this.Pincode == 560068)
+        {
+        	document.write("Correct addresss")
+        }
+        else
+        {
+        	document.write("Invalid addresss")
+        }
+    }
+    display()
+    {
+    	document.write(this.name, this.Landmark)
+    }
+}
+var online_shopping = new online_spping_address("Akshata", 9876501236)
+online_shopping.address_details("#53, btm 2nd stage banglore", "near police station", "banglore", 560068, "karnataka", "india")
+online_shopping.display()
+
+//Call back function
+//2
 function AI (identification_face, automation) 
 {
 	document.write(identification_face, automation)
@@ -12,7 +47,7 @@ function datascience (callback)
 }
 datascience (AI)
 
-//2
+//3
 function corporate_information (Company_name, Designation, Salary,Location ) 
 {
 	document.write(Company_name, Designation, Salary,Location)
@@ -23,7 +58,7 @@ function company (callback)
 }
 company(corporate_information)
 
-//3
+//4
 function Library (Book_ID,Book_name, Book_Author, Issue_Date, Due_Date, ID_No, Name, Return_on, Fine) 
 {
 	document.write(Book_ID,Book_name, Book_Author, Issue_Date, Due_Date, ID_No, Name, Return_on, Fine)
@@ -35,7 +70,7 @@ function BOOK(callback)
 }
 BOOK(Library)
 
-//4
+//5
 function speed_Post_1(Post_office_Details,tracking_Number, Counter_No, op_code, From_addres, To_Address, weight, amount, date_time, taxes) 
 {
 	document.write(Post_office_Details,tracking_Number, Counter_No, op_code, From_addres, To_Address, weight, amount, date_time, taxes) 
@@ -46,7 +81,7 @@ function post_office_details (callback)
 }
 post_office_details(speed_Post_1)
 
-//5
+//6
 function Car_Insurance (Name, Address, Contact_details, Email_Id, Policy_Certificate_Number, Proposal_Covernote_Number, Period_of_insuurance, Buisness_Occupation) 
 {
 	document.write(Name, Address, Contact_details, Email_Id, Policy_Certificate_Number, Proposal_Covernote_Number, Period_of_insuurance, Buisness_Occupation)
@@ -57,7 +92,7 @@ function vehicle (callback)
 }
 vehicle(Car_Insurance)
 
-//6
+//7
 function broadband_connection_details(Account_No, Broadband_User_ID, IP_Address ) 
 {
 	document.write(Account_No, Broadband_User_ID, IP_Address)
@@ -68,7 +103,7 @@ function internet_connection (callback)
 }
 internet_connection(broadband_connection_details)
 
-//7
+//8
 function vehicle_information (Vehicle_type, Colour, Engine_number, Chassis_number, Compan) 
 {
  document.write(Vehicle_type, Colour, Engine_number, Chassis_number)
@@ -80,7 +115,7 @@ function vehicle (callback)
 vehicle(vehicle_information)
 
 //Object array()
-//5
+//9
 let Health_care = [
 	{test : "WBc", result: "4.4" , flag:"low", units:"X10E3/U", Refernce_Interval: "4.0-10.5" , LAB : "01"},
     	{test : "RBC", result: "4.05" , flag:"low", units:"X10E6/UL" , Refernce_Interval: "4.10 -5.60", LAB :"01"},
@@ -96,7 +131,7 @@ function get_blood_details(item)
 	document.write(item.test, item.result, item.LAB)
 }
 
-//6
+//10
 let College_Lab_components_duing_the_Lab_exercise = [
 	{S_No : 1 , Components : "UJT", Specifications : "2N 2646", Quantity : 2},
 	{S_No : 2, Components : "Resistor", Specifications : "220ohms" , Quantity : 1},
@@ -127,7 +162,7 @@ function get_lab_exercise_details(item)
    	 }
 }
 
-//7
+//11
 let demat_Ledger_balance_details = [
 	{Date : "10/01/2021", Particular : "Nsdl Dp Bill-Dec-14", voucher : "K04424462", debit : "45.0" , credit : "0.00" , balance : "584.29 Cr" },
 	{Date : "17/01/2021" ,  Particular :  "BILL FOR BC1415199", voucher : "B00000695", debit : "280.84", credit : "0.00", balance : "865.13 Cr" },
@@ -159,7 +194,7 @@ function Demat_transaction(transaction)
     	}
 }
 
-//8
+//12
 //Validation in class and object in array
 class medical_billing_information{
 	constructor (name_of_medical, bill_no, date, patient_name, ref_by) {
