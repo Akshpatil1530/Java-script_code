@@ -135,7 +135,7 @@ class license
 	{
          	this.first_name = first_name
          	this.middle_name = middle_name
-        	 this.last_name = last_name
+        	this.last_name = last_name
         }
         drivers_details (driver_license_no, Driver_license_state, Driver_license_contry,Civilian_type, Employee_type,Date_of_birth, City_of_birth   ) 
 	{
@@ -162,7 +162,7 @@ class person_appearance_info
 {
  	constructor (weight, hight, Eye_color, gender) 
 	{
- 			this.weight=  weight
+ 		this.weight=  weight
         	this.hight = hight
         	this.Eye_color= Eye_color
         	this.gender =  gender       
@@ -179,23 +179,22 @@ class person_appearance_info
 	{
     		document.write(this.hight, this.gender)
         	document.write(this.home_address)
-            if(this.weight  > 60)
-            {
-            	document.write("over weight")
-            }
-            else 
-            {
-            	document.write("Balanced weight")
-            }
-          	if(this.mobile == 8889994440)
-        	{
+            	if(this.weight  > 60)
+            	{
+            		document.write("over weight")
+            	}
+           	 else 
+            	{
+            		document.write("Balanced weight")
+            	}
+            	if(this.mobile == 8889994440)
+            	{
          		document.write("valid Number")
-        	}
-        	else
-        	{
+            	}
+            	else
+            	{
         		document.write("Invalid Number")
-        	}
-            
+            	}
    	 }    
 }
 var personal_appearance=  new person_appearance_info(60, "5.8", "brown", "male")
@@ -224,10 +223,10 @@ class Online_shopping
        {
  		this.Estimated_Arrival = Estimated_Arrival
         	this.Return_Policy = Return_Policy
-        	//document.write(this.Return_Policy, this.Estimated_Arrival)
        }
        display () 
        {
+       		document.write(this.Return_Policy, this.Estimated_Arrival)
     	 	document.write( this.Material, this.Return_Policy, this.Estimated_Arrival)
        }
 }
@@ -236,17 +235,21 @@ shirt_online_shop.shipping_details("9 days", "Seller will accept returns within 
 shirt_online_shop.display()
 
 //10
-class vehicle_information {
-	constructor (Vehicle_type, Colour, Company) {
-    this.Vehicle_type = Vehicle_type
-    this.Colour = Colour
-    this.Company = Company
+class vehicle_information 
+{
+    constructor (Vehicle_type, Colour, Company) 
+    {
+    	this.Vehicle_type = Vehicle_type
+    	this.Colour = Colour
+    	this.Company = Company
     }
-	engine (Engine_number, Chassis_numbe) {
-     this.E = Engine_number
-     this.C = Chassis_numbe 
+    engine (Engine_number, Chassis_numbe) 
+    {
+     	this.E = Engine_number
+     	this.C = Chassis_numbe 
     }
-    display () {
+    display () 
+    {
     	document.write(this.Vehicle_type, this.Colour, this.Company )
         document.write(this.E, this.C )
     }
@@ -258,7 +261,7 @@ vehicle.display()
 //11
 class visiting_card_details
 {
-	constructor (name,mail_id,contact_no,company_name  ) 
+	constructor (name,mail_id,contact_no,company_name) 
 	{
     		this.name = name
     		this.mail_id = mail_id
@@ -266,29 +269,29 @@ class visiting_card_details
         	this.company_name = company_name 
     	}
     	contact(address) 
-		{
+	{
     		this.address = address
     	}
     	display() 
 		{
-    		document.write(this.company_name, this.address)
-            if (this.mail_id == "naresh.jvt@gmail.com")
-            {
-            	document.write("Valid email ID")
-            }
-            else
-            {
-            	document.write("Invalid email ID")
-            }
-            if (this.contact_no == 9944860792)
-            {
-            	document.write("Valid number")
-            }
-            else
-            {
-            	document.write("Invalid number")
-            }
-    	}
+    			document.write(this.company_name, this.address)
+            		if (this.mail_id == "naresh.jvt@gmail.com")
+            		{
+            			document.write("Valid email ID")
+            		}
+           		 else
+            		{
+            			document.write("Invalid email ID")
+            		}
+            		if (this.contact_no == 9944860792)
+            		{
+            			document.write("Valid number")
+           		}
+            		else
+           		{
+            			document.write("Invalid number")
+            		}
+    		}
 }
 var visiting = new visiting_card_details("naresh", "naresh.jvt@gmail.com", 9944860792, "jvt" )
 visiting.contact("230/3 2nd floor hal3rd stage new thippasandra bangalore-560075.230/3 2nd floor hal3rd stage new thippasandra bangalore-560075.")
@@ -391,31 +394,36 @@ person_bio.software()
 class Laptop_Specification 
 {
 	static model = "LGp430"
-	consructor () 
+	constructor (os, Processor, RAM, Screen, Resolution) 
 	{
-    		this.os = "Windows 7 home base, Premium or professional"
-        	this.Processor = "Second Generation Intel Core i3,i5 or i7 processor"
-       	 	this.RAM = "upto 80GB"
-        	this.Screen = "14.0 inch HD-LCD -backlit"
-       	 	this.Resolution = "1366*768"
+    		this.os = os
+        	this.Processor = Processor
+       	 	this.RAM = RAM
+        	this.Screen = Screen
+       	 	this.Resolution = Resolution
     	}
-     	Laptop_details() 
+     	Laptop_details(Weight, Storage, Graphics, Networking, Battery_life ,Cost) 
 	{
-        	this.Weight = "4.28 pound"
-       	 	this.Storag = "320GB"
-        	this.Graphics = "Intel HD Graphics"
-        	this.Networking = "802.11 b/g/n,bluetooth 3.0"
-        	this.Battery_life = "6-cell Battery"
-        	this.Cost = 50000
+        	this.Weight = Weight
+       	 	this.Storage = Storage
+        	this.Graphics = Graphics
+        	this.Networking = Networking
+        	this.Battery_life = Battery_life
+        	this.Cost = Cost
         }
         static get () 
 	{
         	document.write(Laptop_Specification.model)
       	}
+        display () 
+        {
+        	document.write(this.RAM, this.Networking, this.Cost)
+        }
 }
-let Laptop = new Laptop_Specification()   
-Laptop.Laptop_details()
+let Laptop = new Laptop_Specification("Windows 7 home base", "Premium or professional", "Second Generation Intel Core i3,i5 or i7 processor", "upto 80GB", "14.0 inch HD-LCD -backlit",  "1366*768" )   
+Laptop.Laptop_details("4.28 pound", "320GB", "Intel HD Graphics",  "802.11 b/g/n,bluetooth 3.0", "6-cell Battery", 5000)
 Laptop_Specification.get()
+Laptop.display () 
 
 //16
 class Electricity_Bill 
