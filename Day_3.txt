@@ -108,7 +108,7 @@ class person_appearance_info
         	//document.write(this.home_address)
    	 }    
 }
-var personal_appearance=  new person_appearance_info("5.5", "5.8", "brown", "male")
+var personal_appearance=  new person_appearance_info(60, "5.8", "brown", "male")
 personal_appearance.contact_details = ("#6/96,rajapet,kadapa", 975545445, 8889994440, "Andrapradesh", "India") 
 personal_appearance.display_1()
 
@@ -158,27 +158,36 @@ person_name.drivers_details ("ka50201500006939", "karnataka", "india", "around i
 person_name.display()
 
 //8
-class person_appearance
+class person_appearance_info 
 {
  	constructor (weight, hight, Eye_color, gender) 
 	{
- 		this.weight =  weight
+ 			this.weight=  weight
         	this.hight = hight
-        	this.Eye_color = Eye_color
-        	this.gender=  gender
-        	if( hight == "5.8" )
-        	{
- 			document.write("Valid")     
-        	}
+        	this.Eye_color= Eye_color
+        	this.gender =  gender       
  	}
-    	contact_details (home_address, home_phone, mobile, state, country) 
+	contact_details (home_address, home_phone, mobile, state, country) 
 	{
     		this.home_address = home_address 
         	this.home_phone = home_phone
         	this.mobile =  mobile
         	this.state = state
-       	 	this.country = country
-        	if(mobile == 8889994440)
+        	this.country = country
+   	 }
+    	display_1 () 
+	{
+    		document.write(this.hight, this.gender)
+        	document.write(this.home_address)
+            if(this.weight  > 60)
+            {
+            	document.write("over weight")
+            }
+            else 
+            {
+            	document.write("Balanced weight")
+            }
+          	if(this.mobile == 8889994440)
         	{
          		document.write("valid Number")
         	}
@@ -186,15 +195,13 @@ class person_appearance
         	{
         		document.write("Invalid Number")
         	}
-    	}
-   	 display_1 () 
-	 {
-    		document.write(this.weight,  this.Eye_color,this.gender, this.state)
-    	 }    
+            
+   	 }    
 }
-var person_information =  new person_appearance("5.5", "5.8", "brown", "male")
-person_information.contact_details = ("#6/96,rajapet,kadapa", 975545445, 8889994440, "Andrapradesh", "India") 
-person_information.display_1()
+var personal_appearance=  new person_appearance_info(60, "5.8", "brown", "male")
+personal_appearance.contact_details("#6/96,rajapet,kadapa", 975545445, 8889994440, "Andrapradesh", "India") 
+personal_appearance.display_1()
+
 
 //9
 class Online_shopping 
@@ -259,15 +266,31 @@ class visiting_card_details
         	this.company_name = company_name 
     	}
     	contact(address) 
-	{
+		{
     		this.address = address
     	}
     	display() 
-	{
+		{
     		document.write(this.company_name, this.address)
+            if (this.mail_id == "naresh.jvt@gmail.com")
+            {
+            	document.write("Valid email ID")
+            }
+            else
+            {
+            	document.write("Invalid email ID")
+            }
+            if (this.contact_no == 9944860792)
+            {
+            	document.write("Valid number")
+            }
+            else
+            {
+            	document.write("Invalid number")
+            }
     	}
 }
-var visiting = new visiting_card_details("naresh", "naresh.jvt@gmail.com", "+91 9944860792", "jvt" )
+var visiting = new visiting_card_details("naresh", "naresh.jvt@gmail.com", 9944860792, "jvt" )
 visiting.contact("230/3 2nd floor hal3rd stage new thippasandra bangalore-560075.230/3 2nd floor hal3rd stage new thippasandra bangalore-560075.")
 visiting.display()
 
@@ -521,16 +544,16 @@ class lic_policy
  	constructor ( Branch_Code) 
 	{
 			this.Branch_Code = Branch_Code	
-    	}
+    }
     	lic_policy_details (Date,Address_of_Branch_office, Total_cost,mr_Mrs ,Policy_No,Doc ,Due_Date ,Premium_amount ,Late_Fee,Loan_interest ,Total_Rs, Next_Due) 
 	{
-    		this.Date = Date
+    	this.Date = Date
 		this.Address_of_Branch_office = Address_of_Branch_office
 		this.Total_cost= Total_cost
 	 	this.mr_Mrs = mr_Mrs
 		this.Policy_No = Policy_No
 		this.Doc  = Doc
-       		this.Due_Date = Due_Date
+       	this.Due_Date = Due_Date
 		this.Premium_amount = Premium_amount
 		this.Late_Fee = Late_Fee
 		this.Loan_interest =Loan_interest
@@ -538,13 +561,21 @@ class lic_policy
 		this.Next_Due = Next_Due
     	}   	
         display () 
-	{
+		{
         	document.write(this.Address_of_Branch_office, this.Branch_Code )
+            if (this.Total_cost == 6713)
+            {
+            	document.write("total bill paid")
+            }
+            else
+            {
+            	document.write("not paid")
+            }
         }
  }
 
 var policy = new lic_policy(309)
-policy.lic_policy_details("07/11/2013-12:51", "BTM layout", "6713.00","6713.00" ,364164915 ,"02/04/2009" , "04/13","6426.00" , "287.20",  "Due 01/2019 to 02/2021", "6713.20" , "04/2014")
+policy.lic_policy_details("07/11/2013-12:51", "BTM layout", 6713,"6713.00" ,364164915 ,"02/04/2009" , "04/13","6426.00" , "287.20",  "Due 01/2019 to 02/2021", "6713.20" , "04/2014")
 policy. display ()
 
 //21
