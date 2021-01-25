@@ -94,6 +94,30 @@ function library_book_issue_information(issuedate,duedate,idno)
 var library = new library_book_issue_information("14/01/2012","13/02/2012","2008Ec027") 
 
 //9
+function broadband_connection(Account_no, Broadband_User_ID, IP_Address)
+{
+	this.Account_no = Account_no
+    	this.Broadband_User_ID = Broadband_User_ID
+   	this.IP_Address = IP_Address
+    	document.write(this.Account_no, this.IP_Address)
+}
+broadband_connection (1135497, 11128550, "10.245.97.123")
+
+//10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class ceo 
 {
  	constructor (name) 
