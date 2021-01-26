@@ -1,5 +1,5 @@
-
 //Type script
+//Functions
 
 //1
 function person (first_name: string , last_name : string, age : number) 
@@ -61,6 +61,7 @@ function library_book_issue_information(issuedate : string, duedate : string, id
 }
 var library = new library_book_issue_information("14/01/2012","13/02/2012","2008Ec027") 
 
+//Classes
 //6
 class flowers 
 {
@@ -156,6 +157,7 @@ let infosys = new corporation_information ("infosys", "junior software engg", 20
 let wipro = new corporation_information ("wipro", "senior software engg", 30000, "sarjapur banglore");
 console.log(intimetec.comp_name, infosys.designation, wipro.location);
 
+//array
 //12
 let vehicle : [string , number, string]
 vehicle = ["honda", 200000, "150cc"]
@@ -166,6 +168,7 @@ let Corporate_Information : [string, string, string, string];
 Corporate_Information = ["JVT", "Programmer",  "2.3 or 230000", "Bangalore"];
 console.log(Corporate_Information[2], Corporate_Information[3]);
 
+//Function validation
 //14
 function usage_net(TotalMBdownloaded : number, MobiledownloadSpeed : string)
 {
@@ -331,6 +334,7 @@ var vehicle = new vehicle_information( "light motor vehicle- car", "red", "BMW" 
 vehicle.engine("kp98gtyihh457797", "tc5678898335r45");
 vehicle.display();
 
+//Validation
 //20
 class visiting_card_details
 {
@@ -353,23 +357,23 @@ class visiting_card_details
     	display() 
 		{
     			console.log(this.company_name, this.address)
-            	if (this.mail_id == "naresh.jvt@gmail.com")
-            	{
-            		console.log("Valid email ID");
-            	}
-           		else
-            	{
-            		console.log("Invalid email ID");
+            		if (this.mail_id == "naresh.jvt@gmail.com")
+            		{
+            			console.log("Valid email ID");
+            		}
+           			else
+            		{
+            			console.log("Invalid email ID");
                     
-                }
-            	if (this.contact_no == 9944860792)
-            	{
-            		console.log("Valid number");
+                	}
+            		if (this.contact_no == 9944860792)
+            		{
+            			console.log("Valid number");
            		}
-            	else
+            		else
            		{
-            		console.log("Invalid number");
-            	}
+            			console.log("Invalid number");
+            		}
     		}
 }
 var visiting = new visiting_card_details("naresh", "naresh.jvt@gmail.com", 9944860792, "jvt" );
@@ -415,6 +419,7 @@ var Electrical_bill  = new Electric_bill_paid_via_netbanking_1 ("www.tnebnet.org
 Electrical_bill.person_billing_statement("sbi", "kumar00", 123456, "18cv21828578437", "successful")
 Electrical_bill.display()
 
+//function Callback
 //22
 function corporate_information (Company_name : string, Designation : string, Salary : string, Location : string) 
 {
@@ -543,18 +548,18 @@ function get_lab_exercise_details(item : any)
     	{
     		console.log(item.Specifications);
     	}
-   	 	if (item.S_No == 2)
+   	if (item.S_No == 2)
     	{
     		console.log(item.Components);
     	}
-    		if (item.S_No == 3)
+    	if (item.S_No == 3)
     	{
     		console.log(item.Quantity);
-   	 }
-    		if (item.S_No == 1)
-   	 {
+   	}
+    	if (item.S_No == 1)
+   	{
         console.log(item.Components);
-   	 }
+   	}
 }
 
 
@@ -572,26 +577,26 @@ function Demat_transaction(transaction)
     	if (transaction.Date == "10/01/2021" )
     	{
     		console.log(transaction.debit);
-   	    }
+   	}
    	 
-	 if (transaction.Date ==  "17/01/2021" )
+	if (transaction.Date ==  "17/01/2021" )
     	{
     		console.log(transaction. Particular);
-   	    }
+   	}
     
    	 if (transaction.Date == "18/01/2021" ) 
    	 {
-    	console.log(transaction.credit);
-    }
+    		console.log(transaction.credit);
+   	 }
     
-    	if (transaction.Date ==  "20/01/2021" )
+    	 if (transaction.Date ==  "20/01/2021" )
    	 {
-        console.log(transaction.balance);
-    	}
+        	console.log(transaction.balance);
+    	 }
 }
 
-
 //30
+
 class medical_billing_information
 {
     name_of_medical : string; 
@@ -610,7 +615,7 @@ class medical_billing_information
     {
     	console.log(this.name_of_medical,this.patient_name )
     }
-   }
+}
 var medical = new medical_billing_information("Apollo Pramcy", 35, "16.10.2012", "Manisha patel", "Dr.Rawther Nithin");
 medical.display ();
 if (medical.name_of_medical == "Apollo Pramcy")
@@ -623,8 +628,9 @@ if (medical.name_of_medical == "Apollo Pramcy")
     medical_bills.map(get_tablet_details);
     function get_tablet_details (item) 
     {
-	    console.log(item.Quantity, item.Description , item.Batch) 
-        if (item.Quantity == "2X1 ML") 
+	console.log(item.Quantity, item.Description , item.Batch) 
+        
+	if (item.Quantity == "2X1 ML") 
         {
     	    console.log( item.Batch);
         }
@@ -642,9 +648,3 @@ else
 {
 	console.log("No medical found in this name");
 }
-
-
-
-
-
-
