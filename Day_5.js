@@ -253,4 +253,44 @@ for(i = 0; i < visiting_card_detail.length; i++)
 	document.write(visiting_card_detail[i])
 }
 
+//14
+function book_issue_detail() 
+{
+	this.book_id= 1234566
+	this.book_name = "C Programming"
+	this.author = "Dennis Ritche"
+   	document.write(this.book_id, this.book_name)
+    	if (this.book_id == 1234566 && this.book_name == "C Programming" && this.author == "Dennis Ritche")
+    	{
+    		class book_issue_details
+        	{
+        		constructor (name, student_id_no) 
+            		{
+            			this.name = name
+               			this.student_id_no = student_id_no
+            		}
+		    	book_issue(Issue_Date, Due_Date, Return_on, fine)
+            		{
+            			this.Issue_Date = Issue_Date
+                		this.Due_Date = Due_Date
+                		this.Return_on = Return_on
+                		this.fine = fine
+            		}
+            		display () 
+            		{
+            			document.write(this.name,this.Issue_Date,  this.fine)
+            		}
+            
+       		 }
+       		 var student_details = new book_issue_details("Saravanan", "2008Ec027")
+       		 student_details.book_issue("14/01/2012", "13/02/2012", "25/02/2012" , 12)
+        	 student_details.display() 
+    	}
+    	else
+    	{
+    		document.write("Book is not matching with the details")
+   	}
+}
+book_issue_detail()
+
 </script>
