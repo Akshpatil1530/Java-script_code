@@ -28,7 +28,7 @@ function akshata ()
     	//Variable(emotions) stores in stack, data("happy") stores in heap.
 	var color = "fair"
 	var hair = "black"
-	var height = 5.4
+	var height = "5.4"
     	document.write(color, hair)
 }
 akshata ()
@@ -133,4 +133,33 @@ function Corporate_Information ()
     	document.write(Company_name, Designation, Salary, Location)
 }
 Corporate_Information ()
+
+//11
+function temple_darshan_details() 
+{
+	var Ticket_Type = "Special Entry Darshan"
+	var Date = "Dec 1st"
+	var Day = "Tuesday"
+	var Time = "3:30 Am"
+	var Per_Slot_Tickets = 2000
+	var Booking_No = "IS151110080016"
+	var Name_of_the_Pilgrim = "venkatesh"
+	var Order_No = 010600013554
+	var Email = "venkateshprofessional7@gmail.com"
+	var Amount_in_figures_Rs = 220
+	var Proof_of_ID =  "Aadhaar Card 733498928758"
+	var Booked_Date_Time = "11-06-2015 11:36:46"
+	var No_of_Persons = 1
+	var Name_of_the_Seva_Darshan = "Archana"
+	var Reporting_Time = "4:00 AM"
+	var Performance_Date_Time = "12-01-2015 AM 4:30:00"
+	var Privileges_to_the_Seva = "Two Small Laddu"
+	var Booked_Time = "11:36:46"
+	var Accommodation_Type = "Rs 500 Tirumala"
+	var Available = 350
+	var No_of_Tickets = 1
+	var Rate = "50 to 2000"
+    document.write(Ticket_Type, Name_of_the_Seva_Darshan, Per_Slot_Tickets)
+}
+temple_darshan_details() 
 </script>
