@@ -28,9 +28,9 @@ let Appearance_information_3 = {
     	Gender : "male", 
     	Home_address : "#6/96,rajampet,kadapa.", 
    	Home_phone : 975545445,
-   	 Mobile : 8553577745, 
-   	 State : "andhrapradesh",
-   	 County : "india"
+   	Mobile : 8553577745, 
+   	State : "andhrapradesh",
+   	County : "india"
 }
 Appearance_information_3.method = function () 
 {
@@ -208,7 +208,7 @@ let Library = {
 	Book_name: "C Programming",
 	Book_Author:" Dennis Ritche",
 	Issue_Date: "14/01/2012",
-    Due_Date: "13/02/2012",
+    	Due_Date: "13/02/2012",
 	ID_No: "2008Ec027",
 	Name: "Saravanan",
 	Return_on: "25/02/2012",
