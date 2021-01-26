@@ -141,6 +141,7 @@ let College_Lab_components_duing_the_Lab_exercise = [
     	{S_No : 6, Components : "Regulated power supply", Specifications : "(0-30V),1A", Quantity : 1},
 ]
 College_Lab_components_duing_the_Lab_exercise.map(get_lab_exercise_details) 
+
 function get_lab_exercise_details(item) 
 {
 	document.write(item.S_No, item.Components,item.Specifications)
@@ -215,6 +216,7 @@ var medical = new medical_billing_information("Apollo Pramcy", 35, "16.10.2012",
 medical.display ()
 if (medical.name_of_medical == "Apollo Pramcy")
 {
+
 let medical_bills = [ 
 	{ Quantity : "2X1 ML", Description : "Drops Ciplox-D", MFG: "CIPLA", Batch : "mz0014", Expire: "05/13", amount :"19.80"},
 	{ Quantity :"5x1 NA", Description : "Blead Gallant Razor", MFG: "BDF", Batch : 01, Expire: "01/14", amount :"150.00"},
