@@ -192,7 +192,7 @@ class creating_google_account
     name_validation(choose_username)
     {
     	this.choose_username = choose_username
-    	if (this.First_Name == undefined || this.Last_Name == undefined)
+    	if (this.First_Name == null || this.Last_Name == null)
         {
         	document.write("Please enter your first name and last name")
         }
